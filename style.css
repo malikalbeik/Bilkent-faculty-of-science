@@ -1,0 +1,161 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    background: #F6F6F6;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.25);
+    display: flex;
+}
+
+
+
+
+#logo {
+    display: flex;
+    width: 50%;
+}
+
+#logo img {
+    height: 75px;
+    width: 75px;
+    margin: 12.5px 20px;
+}
+
+#faculty_logo {
+    color: #1E4EA2;
+    padding: 28.5px 0;
+}
+
+#faculty_logo > h1 {
+    font-size: 22px;
+    margin: 0;
+    font-weight: bold;
+}
+
+#faculty_logo > h2 {
+    font-size: 16px;
+    margin: 0;
+    font-weight: lighter;
+}
+
+nav {
+    width: 50%;
+    vertical-align: middle;
+    text-align:center;
+}
+
+nav ul {
+    float: right;
+    display:inline-block;
+    margin: 21px 0;
+    margin-right: 25px;
+}
+
+nav li {
+    margin: 20px;
+    display: inline;
+    float: left;
+    color: #636363;
+}
+
+nav li a {
+    color: #636363;
+    text-decoration: none;
+}
+
+nav li + li {
+    margin-left:20px;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 600px;
+    z-index: -1 !important;
+}
+
+.swiper-wrapper > div {
+    overflow: hidden;
+}
+
+.swiper-wrapper img {
+    min-width: 100%;
+}
+
+#about_faculty, #featured_videos {
+    padding: 0 10%;
+}
+
+#about_faculty > h2, #featured_videos > h2{
+    margin-bottom: 10px;
+}
+
+#about_faculty > hr, #featured_videos > hr  {
+    width: 300px;
+    margin-left: 17.5px;
+    border: solid 0.5px #BFBFBF;
+    margin-top: 0;
+}
+
+#about_faculty > p, #featured_videos > p {
+    text-align: justify;
+}
+
+#featured_videos > hr {
+    width: 150px;
+}
+
+#videos_container {
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+}
+
+#videos_container > div {
+    margin: 0;
+    margin-bottom: 10%;
+    width: 30%;
+}
+
+#videos_container > div > iframe {
+    padding-top: 18.25%;
+    height: 100%;
+}
+
+
+
+footer {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    background: #F6F6F6;
+    box-shadow: 0 -2px 6px 0 rgba(120,120,120,0.25);
+}
+
+footer > ul {
+    width: 50%;
+    padding: 0;
+}
+
+footer > ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+footer > div {
+    width: 50%;
+}
+
+footer > div p {
+    float: right;
+    margin-right: 25px;
+}
