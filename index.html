@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <title>Faculty of Science at Bilkent University</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="sources/logo.png" alt="Bilkent University's logo">
+            <div id="faculty_logo">
+                <h1>BILKENT UNIVERSITY</h1>
+                <h2>Faculty of Science</h2>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li id="departments_link">Departments</li>
+                <li><a href="seminars">Seminars</a></li>
+                <li><a href="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Slider main container -->
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <div>
+                    <img src="sources/1.jpg" alt="">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <img src="sources/2.jpg" alt="">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <img src="sources/1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    
+    </div>
+
+
+    <div id="about_faculty">
+        <h2>About The Faculty of Science</h2>
+        <hr>
+
+        <p>
+            The Departments of Chemistry, Mathematics, Molecular Biology and Genetics, and Physics offer both graduate and
+            undergraduate programs leading to B.S., M.S. and Ph.D. degrees. In addition, the Faculty contributes to
+            interdisciplinary graduate programs that offer M.S. and Ph.D. degrees in the areas of Materials Science and
+            Nanotechnology and Neuroscience.
+            
+            <br>
+
+            At the undergraduate level, the Faculty admits a small number of highly qualified students to each program. The
+            undergraduate curricula 15are designed to prepare the students for graduate study by providing a strong background in the
+            general area of study with further opportunities of developing a deeper knowledge in various areas of emphasis.
+            
+            <br>
+
+            The graduate programs aim to develop students into scientists who can pursue original and creative research. Graduate
+            education in the Faculty is an inseparable part of the research activity which aims to produce significant scientific
+            output at the international level.
+            
+            <br>
+
+            The faculty also offers a number of service courses to students from other faculties.
+        </p>
+    </div>
+    <div id="featured_videos">
+        <h2>Featured Videos</h2>
+        <hr>
+        <div id="videos_container">
+            <div>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/j6nd-VkmUOA?list=PL5B3KLQNAC5gW9BVRqytSdXuHDWWrJhU2" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/YHLROgC-lDo?list=PL5B3KLQNAC5gW9BVRqytSdXuHDWWrJhU2" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/MV052zXdgTI?list=PL5B3KLQNAC5gW9BVRqytSdXuHDWWrJhU2" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <ul>
+            <li><i class="fas fa-phone"></i></li>
+            <li><i class="fas fa-map-marked-alt"></i></li>
+            <li><i class="fas fa-fax"></i></li>
+            <li><i class="far fa-envelope"></i></li>
+        </ul>
+        <div>
+            <p>Made By: <span>Malik Albeik</span></p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        })
+    </script>
+</body>
+</html>
