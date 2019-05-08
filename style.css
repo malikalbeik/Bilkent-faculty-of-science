@@ -1,3 +1,25 @@
+/*
+https://www.pixelsurplus.com/freebies/manrope-free-modern-geometric-sans-serif-font-family
+Manrope font is created by micheal gent and is an 
+open-source font free for personal & commercial use.
+*/
+
+@font-face {
+    font-family: manrope;
+    src: url(fonts/manrope/regular.otf);
+  }
+  
+  @font-face {
+    font-family: manrope;
+    src: url(fonts/manrope/light.otf);
+    font-weight: lighter;
+  }
+  @font-face {
+    font-family: manrope;
+    src: url(fonts/manrope/bold.otf);
+    font-weight: bold;
+  }
+
 html, body {
     width: 100%;
     height: 100%;
@@ -9,7 +31,6 @@ html, body {
 header {
     width: 100%;
     height: 100px;
-    overflow: hidden;
     background: #F6F6F6;
     -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.25);
     -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.25);
@@ -17,12 +38,21 @@ header {
     display: flex;
 }
 
-
+* {
+    font-family: manrope;
+    font-weight: normal;
+}
 
 
 #logo {
     display: flex;
     width: 50%;
+}
+
+#logo > a {
+    width: 100%;
+    display: flex;
+    text-decoration: none;
 }
 
 #logo img {
@@ -79,7 +109,7 @@ nav li + li {
 
 .swiper-container {
     width: 100%;
-    height: 600px;
+    height: 750px;
     z-index: -1 !important;
 }
 
@@ -118,6 +148,7 @@ nav li + li {
     display: flex;
     justify-content: space-between;
     height: fit-content;
+    margin-top: -50px;
 }
 
 #videos_container > div {
@@ -149,6 +180,11 @@ footer > ul {
 footer > ul li {
     display: inline;
     margin: 0 20px;
+    text-decoration: none;
+}
+
+footer a {
+    color: #636363;
 }
 
 footer > div {
@@ -158,4 +194,154 @@ footer > div {
 footer > div p {
     float: right;
     margin-right: 25px;
+}
+
+#departments_link {
+    margin: 4px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background: #F6F6F6;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    margin: 0;
+}
+  
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #D3D3D3;
+}
+  
+
+
+/*========== Contact Page ==========*/
+
+#contact {
+    width: calc(100% - 100px);
+    padding: 50px;
+}
+
+#contact > h3 {
+    color: black;
+    text-align: center;
+    padding-top: 75;
+    margin-bottom: 10px;
+    font-size: 42px;
+}
+
+#contact > hr {
+    width: 250px;
+    border: solid 0.5px #979797;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+#contact > ul {
+    padding: 25px 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin-bottom: 0;
+    border-bottom: solid 1px #cecece;
+    justify-content: space-evenly;
+}
+
+#contact > ul > li {
+    padding: 50px 25px;
+    width: 250px;
+    margin: 25px;
+    text-align: center;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+/*========== Contact Page ==========*/
+
+#seminars {
+    width: calc(100% - 100px);
+    padding: 50px;
+}
+
+#seminars > h3 {
+    color: black;
+    text-align: center;
+    padding-top: 75;
+    margin-bottom: 10px;
+    font-size: 42px;
+}
+
+#seminars > hr {
+    width: 250px;
+    border: solid 0.5px #979797;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+#seminars > ul {
+    padding: 25px 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin-bottom: 0;
+    border-bottom: solid 1px #cecece;
+    justify-content: space-evenly;
+}
+
+#seminars > ul > li {
+    padding: 50px 25px;
+    width: 500px;
+    margin: 25px;
+    text-align: center;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+#seminars > ul > li h3 {
+    font-weight: bold;
+}
+
+#seminars > ul > li p {
+    text-align: justify;
 }
